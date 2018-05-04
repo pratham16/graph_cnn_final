@@ -1,0 +1,253 @@
+Random seed = 1984
+Training data shape:(6148,2153)
+Test data shape:(2045,2153)
+('Shape of Prob_transition_tensor:', (2153, 11, 2153))
+graph_mat shape:(2153,5)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+graph_conv_1 (GraphConv)     (None, 2153, 10)          60        
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 2153, 10)          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 21530)             0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 100)               2153100   
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 101       
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 1)                 0         
+=================================================================
+Total params: 2,153,261
+Trainable params: 2,153,261
+Non-trainable params: 0
+_________________________________________________________________
+Epoch: 0, R squared: 0.10145
+Epoch: 1, R squared: 0.10592
+Epoch: 2, R squared: 0.15166
+Epoch: 3, R squared: 0.16934
+Epoch: 4, R squared: 0.19016
+Epoch: 5, R squared: 0.18739
+Epoch: 6, R squared: 0.21069
+Epoch: 7, R squared: 0.20759
+Epoch: 8, R squared: 0.23036
+Epoch: 9, R squared: 0.21499
+Epoch: 10, R squared: 0.22664
+Epoch: 11, R squared: 0.22547
+Epoch: 12, R squared: 0.23868
+Epoch: 13, R squared: 0.23589
+Epoch: 14, R squared: 0.22796
+Epoch: 15, R squared: 0.23141
+Epoch: 16, R squared: 0.22662
+Epoch: 17, R squared: 0.23145
+Epoch: 18, R squared: 0.21540
+Epoch: 19, R squared: 0.21663
+Epoch: 20, R squared: 0.24455
+Epoch: 21, R squared: 0.24557
+Epoch: 22, R squared: 0.23640
+Epoch: 23, R squared: 0.23814
+Epoch: 24, R squared: 0.23447
+Epoch: 25, R squared: 0.22184
+Epoch: 26, R squared: 0.25096
+Epoch: 27, R squared: 0.21642
+Epoch: 28, R squared: 0.25617
+Epoch: 29, R squared: 0.22176
+Epoch: 30, R squared: 0.23919
+Epoch: 31, R squared: 0.23407
+Epoch: 32, R squared: 0.22555
+Epoch: 33, R squared: 0.22422
+Epoch: 34, R squared: 0.22559
+Epoch: 35, R squared: 0.22176
+Epoch: 36, R squared: 0.22063
+Epoch: 37, R squared: 0.22004
+Epoch: 38, R squared: 0.22763
+Epoch: 39, R squared: 0.23398
+Conv-FC R squared = 0.23398
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+graph_conv_2 (GraphConv)     (None, 2153, 10)          60        
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 2153, 10)          0         
+_________________________________________________________________
+flatten_2 (Flatten)          (None, 21530)             0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 100)               2153100   
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 1)                 101       
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 1)                 0         
+=================================================================
+Total params: 2,153,261
+Trainable params: 2,153,261
+Non-trainable params: 0
+_________________________________________________________________
+Epoch: 0, R squared: 0.11538
+Epoch: 1, R squared: 0.14306
+Epoch: 2, R squared: 0.16247
+Epoch: 3, R squared: 0.17615
+Epoch: 4, R squared: 0.18890
+Epoch: 5, R squared: 0.19630
+Epoch: 6, R squared: 0.20340
+Epoch: 7, R squared: 0.21218
+Epoch: 8, R squared: 0.21503
+Epoch: 9, R squared: 0.22163
+Epoch: 10, R squared: 0.22618
+Epoch: 11, R squared: 0.22497
+Epoch: 12, R squared: 0.22345
+Epoch: 13, R squared: 0.22534
+Epoch: 14, R squared: 0.22579
+Epoch: 15, R squared: 0.22898
+Epoch: 16, R squared: 0.23729
+Epoch: 17, R squared: 0.23181
+Epoch: 18, R squared: 0.23867
+Epoch: 19, R squared: 0.23270
+Epoch: 20, R squared: 0.23107
+Epoch: 21, R squared: 0.23465
+Epoch: 22, R squared: 0.23278
+Epoch: 23, R squared: 0.23394
+Epoch: 24, R squared: 0.23911
+Epoch: 25, R squared: 0.24428
+Epoch: 26, R squared: 0.24520
+Epoch: 27, R squared: 0.24507
+Epoch: 28, R squared: 0.24669
+Epoch: 29, R squared: 0.23950
+Epoch: 30, R squared: 0.23376
+Epoch: 31, R squared: 0.22810
+Epoch: 32, R squared: 0.22967
+Epoch: 33, R squared: 0.23814
+Epoch: 34, R squared: 0.24079
+Epoch: 35, R squared: 0.23956
+Epoch: 36, R squared: 0.23361
+Epoch: 37, R squared: 0.24089
+Epoch: 38, R squared: 0.24147
+Epoch: 39, R squared: 0.23768
+1-Conv R squared = 0.23768
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+diffusion_conv_1 (DiffusionC (None, 2153, 10)          120       
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 2153, 10)          0         
+_________________________________________________________________
+flatten_3 (Flatten)          (None, 21530)             0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 100)               2153100   
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 1)                 101       
+_________________________________________________________________
+dropout_9 (Dropout)          (None, 1)                 0         
+=================================================================
+Total params: 2,153,321
+Trainable params: 2,153,321
+Non-trainable params: 0
+_________________________________________________________________
+Epoch: 0, R squared: 0.14750
+Epoch: 1, R squared: 0.20104
+Epoch: 2, R squared: 0.21586
+Epoch: 3, R squared: 0.22693
+Epoch: 4, R squared: 0.23495
+Epoch: 5, R squared: 0.23686
+Epoch: 6, R squared: 0.23877
+Epoch: 7, R squared: 0.23501
+Epoch: 8, R squared: 0.24107
+Epoch: 9, R squared: 0.24945
+Epoch: 10, R squared: 0.24662
+Epoch: 11, R squared: 0.23835
+Epoch: 12, R squared: 0.24992
+Epoch: 13, R squared: 0.23849
+Epoch: 14, R squared: 0.23064
+Epoch: 15, R squared: 0.25242
+Epoch: 16, R squared: 0.25722
+Epoch: 17, R squared: 0.23635
+Epoch: 18, R squared: 0.23750
+Epoch: 19, R squared: 0.24641
+Epoch: 20, R squared: 0.23973
+Epoch: 21, R squared: 0.23545
+Epoch: 22, R squared: 0.24517
+Epoch: 23, R squared: 0.23844
+Epoch: 24, R squared: 0.22445
+Epoch: 25, R squared: 0.22388
+Epoch: 26, R squared: 0.23457
+Epoch: 27, R squared: 0.19610
+Epoch: 28, R squared: 0.23614
+Epoch: 29, R squared: 0.21370
+Epoch: 30, R squared: 0.23883
+Epoch: 31, R squared: 0.21390
+Epoch: 32, R squared: 0.23832
+Epoch: 33, R squared: 0.22448
+Epoch: 34, R squared: 0.22499
+Epoch: 35, R squared: 0.22508
+Epoch: 36, R squared: 0.21286
+Epoch: 37, R squared: 0.22000
+Epoch: 38, R squared: 0.22381
+Epoch: 39, R squared: 0.22506
+1-Conv R squared = 0.22506
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+diffusion_conv_modified_1 (D (None, 2153, 10)          23803     
+_________________________________________________________________
+dropout_10 (Dropout)         (None, 2153, 10)          0         
+_________________________________________________________________
+flatten_4 (Flatten)          (None, 21530)             0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 100)               2153100   
+_________________________________________________________________
+dropout_11 (Dropout)         (None, 100)               0         
+_________________________________________________________________
+dense_8 (Dense)              (None, 1)                 101       
+_________________________________________________________________
+dropout_12 (Dropout)         (None, 1)                 0         
+=================================================================
+Total params: 2,177,004
+Trainable params: 2,177,004
+Non-trainable params: 0
+_________________________________________________________________
+Epoch: 0, R squared: 0.13064
+Epoch: 1, R squared: 0.14302
+Epoch: 2, R squared: 0.14786
+Epoch: 3, R squared: 0.15591
+Epoch: 4, R squared: 0.16786
+Epoch: 5, R squared: 0.18550
+Epoch: 6, R squared: 0.20079
+Epoch: 7, R squared: 0.21100
+Epoch: 8, R squared: 0.21602
+Epoch: 9, R squared: 0.22088
+Epoch: 10, R squared: 0.22469
+Epoch: 11, R squared: 0.22545
+Epoch: 12, R squared: 0.22814
+Epoch: 13, R squared: 0.22780
+Epoch: 14, R squared: 0.22690
+Epoch: 15, R squared: 0.23014
+Epoch: 16, R squared: 0.23274
+Epoch: 17, R squared: 0.23239
+Epoch: 18, R squared: 0.22875
+Epoch: 19, R squared: 0.22826
+Epoch: 20, R squared: 0.22802
+Epoch: 21, R squared: 0.22861
+Epoch: 22, R squared: 0.22782
+Epoch: 23, R squared: 0.22679
+Epoch: 24, R squared: 0.22821
+Epoch: 25, R squared: 0.22775
+Epoch: 26, R squared: 0.22425
+Epoch: 27, R squared: 0.22158
+Epoch: 28, R squared: 0.22194
+Epoch: 29, R squared: 0.22168
+Epoch: 30, R squared: 0.22386
+Epoch: 31, R squared: 0.22119
+Epoch: 32, R squared: 0.22091
+Epoch: 33, R squared: 0.22310
+Epoch: 34, R squared: 0.22413
+Epoch: 35, R squared: 0.22170
+Epoch: 36, R squared: 0.22101
+Epoch: 37, R squared: 0.22376
+Epoch: 38, R squared: 0.22327
+Epoch: 39, R squared: 0.22374
+1-Conv R squared = 0.22374
